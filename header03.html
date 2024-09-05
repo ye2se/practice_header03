@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header03</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        .inner {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .header .inner {
+            position: relative;
+            display: flex;
+            height: 120px;
+            align-items: center;
+        }
+
+        .header .inner h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header .utils {
+            margin-left: auto;
+        }
+
+        .header .gnb>ul {
+            display: flex;
+            gap: 40px;
+        }
+
+        .main_visual {
+            height: 480px;
+            background: #ddd;
+        }
+
+        .footer {
+            height: 120px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1>
+                <a href="/">
+                    <img src="./images/logo02.png" alt="">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">menu01</a></li>
+                    <li><a href="#">menu02</a></li>
+                    <li><a href="#">menu03</a></li>
+                    <li><a href="#">menu04</a></li>
+                </ul>
+            </nav>
+            <div class="utils">
+                <button><img src="./images/menu (1).svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section class="main_visual"></section>
+    </main>
+    <footer class="footer">&copy; shin</footer>
+</body>
+</html>
